@@ -1,0 +1,356 @@
+<!-- Input types -->
+
+<input type="text"/>
+<input type="color" />
+<input type="file" />
+<input type="number" />
+<input type="datetime-local" />
+<input type="radio" />
+<input type="checkbox" />
+
+<textarea></textarea>
+
+<select>
+  <option value="seattle">Seattle</option>
+  <option value="portland">Portland</option>
+  <option value="san-francisco">San Francisco</option>
+</select>
+
+<form>
+  <input placeholder="First Name" />
+  <input placeholder="Last Name" />
+</form>
+
+<!-- Table -->
+
+<table>
+    <thead>
+        <tr>
+        <td>Names</td>
+        <td>Points</td>
+        </tr>
+    </thead>
+  <tbody>
+    <tr>
+      <td>Team 1</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Team 2</td>
+      <td>75</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Hyperlink -->
+
+<a href="www.frontendmasters.com">Click me</a>
+
+<!-- In-line CSS -->
+
+<h3 class="the-red-one">This one is red</h3>
+<h3 class="the-blue-one">This one is blue</h3>
+
+<style>
+  /* don't worry about this yet, it's CSS */
+  .the-red-one {
+    color: red;
+  }
+
+  .the-blue-one {
+    color: blue;
+  }
+</style>
+
+<h3 class="the-red-one bolded">This is red and bold</h3>
+
+<style>
+  .bolded {
+    font-weight: bold;
+  }
+</style>
+
+<!-- IDs -->
+
+<h3 id="brand">My Site's Branding</h3>
+
+<p>Use classes instead</p>
+
+<p>Useful for internal links though</p>
+
+<a href="#brand">go to brand</a>
+
+<!-- Add classes for internal clarity -->
+
+<div class="social-post">
+  <h2 class="user-name">@sassy_pants_mcgee</h2>
+  <h3 class="posted-date">Posted 15m ago</h3>
+  <img
+       class="profile-picture"
+       src="http://pets-images.dev-apis.com/pets/dog25.jpg"
+       alt="a doggy"
+       />
+  <p class="social-post-text">
+    You ever think about barking out the window? What would happen if I didn't
+    bark at them? Keeps me up at night.
+  </p>
+</div>
+
+<!-- Nav bar-->
+
+<nav>
+  <ul class="nav-list">
+    <li class="nav-list-item">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    <li class="nav-list-item">
+      <a class="nav-link" href="/news">Newsfeed</a>
+    </li>
+    <li class="nav-list-item">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+    <li class="nav-list-item">
+      <a class="nav-link" href="/contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Header block for every page -->
+
+<code>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Website</title>
+  </head>
+  <body>
+    <!-- all your content will go here -->
+  </body>
+</html>
+</code>
+
+<!-- CSS example-->
+
+h1 {
+  color: limegreen;
+  font-size: 60px;
+  font-weight: normal;
+  text-decoration: underline;
+  text-transform: uppercase;
+  border: 3px solid pink;
+}
+
+h1.main-title {
+  color: peru;
+}
+
+<style>
+  .branding {
+    color: red;
+  }
+
+  .blog-post-title {
+    color: limegreen;
+  }
+</style>
+<h1 class="branding">My Super Cool Brand</h1>
+<h1 class="blog-post-title">My Cool Blog Post</h1>
+
+<!-- CSS pseudo class-->
+
+<style>
+  .hover-example {
+    width: 100px;
+    height: 100px;
+    background-color: limegreen;
+    color: white;
+  }
+  .hover-example:hover {
+    background-color: crimson;
+    width: 150px;
+    height: 150px;
+  }
+</style>
+<div class="hover-example">Hover your mouse over me</div>
+
+<style>
+  .first-child-example {
+    color: crimson;
+  }
+  .first-child-example:first-child {
+    color: limegreen;
+  }
+</style>
+<ol>
+  <li class="first-child-example">First</li>
+  <li class="first-child-example">Second</li>
+  <li class="first-child-example">Third</li>
+</ol>
+
+<div class="chapter">This is a chapter of my book.</div>
+
+<div class="chapter">This is a second chapter of my book.</div>
+
+<style>
+  .chapter {
+    margin: 0;
+  }
+  .chapter::after {
+    content: "❦";
+    font-size: 50px;
+    text-align: center;
+    display: block;
+  }
+</style>
+
+<style>
+  .ex-box {
+    border: 3px solid #aaa;
+    background-color: #eee;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+  }
+  .ex-box:last-of-type {
+    clear: right;
+  }
+</style>
+<div class="ex-box">Box 1</div>
+<div class="ex-box">Box 2</div>
+
+<!--always include this. makes box px sizes include the border-->
+
+* {
+  box-sizing: border-box;
+}
+
+<!--Flexible div containers that easily respond to controls. Also means they will scale adjust rather than re-align when the browser dimensions change-->
+
+<style>
+  .flex-container {
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+  }
+</style>
+<div class="flex-container">
+  <div class="box-1">1</div>
+  <div class="box-2">2</div>
+  <div class="box-3">3</div>
+</div>
+
+<!--reverse direction-->
+
+<style>
+  .reverse {
+    flex-direction: row-reverse;
+  }
+</style>
+<div class="flex-container reverse">
+  <div class="box-1">1</div>
+  <div class="box-2">2</div>
+  <div class="box-3">3</div>
+</div>
+
+<!--align as columns/vertically-->
+
+<style>
+  .column {
+    flex-direction: column;
+  }
+</style>
+<div class="flex-container column">
+  <div class="box-1">1</div>
+  <div class="box-2">2</div>
+  <div class="box-3">3</div>
+</div>
+
+<!--build a grid-->
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .grid-picture {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+<div class="grid">
+  <img
+       class="grid-picture"
+       src="http://pets-images.dev-apis.com/pets/dog25.jpg"
+       alt="a doggy"
+       />
+  <img
+       class="grid-picture"
+       src="http://pets-images.dev-apis.com/pets/dog26.jpg"
+       alt="a doggy"
+       />
+  <img
+       class="grid-picture"
+       src="http://pets-images.dev-apis.com/pets/dog27.jpg"
+       alt="a doggy"
+       />
+  <img
+       class="grid-picture"
+       src="http://pets-images.dev-apis.com/pets/dog28.jpg"
+       alt="a doggy"
+       />
+</div>
+
+<!--build a page using grid-->
+
+<style>
+  .my-page-header {
+    grid-area: nav-header;
+    background-color: red;
+    padding: 10px;
+  }
+
+  .my-page-body {
+    grid-area: main-body;
+    background-color: blue;
+    padding: 10px;
+  }
+
+  .my-page-sidebar {
+    grid-area: nav-side;
+    background-color: green;
+    padding: 10px;
+  }
+
+  .my-page-footer {
+    grid-area: footer;
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .my-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "nav-header  nav-header  nav-header  nav-side"
+      "main-body   main-body   .           nav-side"
+      "footer      footer      footer      footer";
+  }
+</style>
+<div class="my-page">
+  <header class="my-page-header">the header</header>
+  <div class="my-page-body">the body</div>
+  <div class="my-page-sidebar">the sidebar</div>
+  <footer class="my-page-footer">the footer</footer>
+</div>
